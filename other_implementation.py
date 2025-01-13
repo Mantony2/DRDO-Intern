@@ -24,7 +24,7 @@ y = cleaned_data['Current_Move']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# ---------------------- Naive Bayes ----------------------
+# Naive Bayes 
 
 
 nb_model = MultinomialNB()
@@ -37,7 +37,7 @@ accuracy_nb = accuracy_score(y_test, y_pred_nb)
 print(f"Accuracy using Naive Bayes: {accuracy_nb:.2f}")
 print(classification_report(y_test, y_pred_nb))
 
-# ---------------------- K-Means ----------------------
+#  K-Means 
 
 
 kmeans = KMeans(n_clusters=3, random_state=42)

@@ -7,10 +7,7 @@ st.subheader("Enter Your Details")
 age = st.slider("Enter your age:", 1, 100)
 gender = st.selectbox("Select your gender:", ["👨 Male", "👩 Female"])
 previous_move = st.selectbox("What was your previous move 🤔?", ["Rock 🪨", "Paper 📝", "Scissors ✂️"])
-# if st.button("Predict My Next Move"):
-#     st.write("Predicted Move: Coming soon")
-#     st.write("My Move to defeat you: Coming soon")
-# "Let's Play" Button
+
 if st.button(" Let's Play 🎮"):
   moves = ["🪨 Rock", "📝 Paper", "✂️ Scissors"]
 
